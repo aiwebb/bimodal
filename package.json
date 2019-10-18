@@ -1,0 +1,29 @@
+{
+  "name": "omega-fn",
+  "version": "0.0.1",
+  "description": "Ω eliminates try/catch boilerplate and replaces it with a two-channel [err, result] array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiwebb/omega-fn.git"
+  },
+  "keywords": [
+    "omega",
+    "Ω",
+    "channels",
+    "try",
+    "catch",
+    "finally",
+    "async",
+    "await"
+  ],
+  "author": "Alex Webb <alexwebb2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aiwebb/omega-fn/issues"
+  },
+  "homepage": "https://github.com/aiwebb/omega-fn#readme"
+}
