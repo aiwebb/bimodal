@@ -1,23 +1,23 @@
-# Ω: the Omega function
+# bimodal
 
-`Ω` is an experiment in replacing `try`/`catch` boilerplate with an `[err, result]` array, inspired by [error return values in Go](https://gobyexample.com/errors).
+`bimodal` is an experiment in replacing `try`/`catch` boilerplate with an `[err, result]` array, inspired by [error return values in Go](https://gobyexample.com/errors).
 
 
 ## Installation
 ```bash
 # npm
-npm i --save omega-fn
+npm i --save bimodal
 
 # yarn
-yarn add omega-fn
+yarn add bimodal
 ```
 
 
 ## Usage
 ```js
-const Ω = require('omega-fn')
+const bimodal = require('bimodal')
 
-const [err, result] = await Ω (fnThatMayThrowError, arg1, arg2, ...)
+const [err, result] = await bimodal (fnThatMayThrowError, arg1, arg2, ...)
 ```
 
 
@@ -40,7 +40,7 @@ catch (err) {
 
 This is nicer:
 ```js
-let [err, result] = await Ω (fnThatMayThrowError)
+let [err, result] = await bimodal (fnThatMayThrowError)
 
 if (err) {
   // ...
@@ -69,17 +69,3 @@ module.exports = async (fn, ...args) => {
   }
 }
 ```
-
-
-## Why Ω?
-
-- `Ω` represents *finality*, and this function is conceptually similar to a `finally` block
-- it's keyboard-friendly (at least on a Mac: `option`+`z`)
-- since the goal is hiding as much annoying syntax as possible, I wanted something that was only a single character
-- unclaimed single-char non-alpha keyboard-friendly valid JS identifiers are in ***very*** short supply (thanks a lot, `$` and `_`)
-
-
-If you're weirded out by it, you can always call it something else:
-- `const omega    = require('omega-fn')`
-- `const channels = require('omega-fn')`
-- `const potato   = require('omega-fn')`
