@@ -1,18 +1,17 @@
 {
-  "name": "omega-fn",
+  "name": "bimodal",
   "version": "0.0.1",
-  "description": "Ω eliminates try/catch boilerplate and replaces it with a two-channel [err, result] array",
+  "description": "bimodal eliminates try/catch boilerplate and replaces it with a two-channel [err, result] array",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aiwebb/omega-fn.git"
+    "url": "git+https://github.com/aiwebb/bimodal.git"
   },
   "keywords": [
-    "omega",
-    "Ω",
+    "bimodal",
     "channels",
     "try",
     "catch",
@@ -23,7 +22,7 @@
   "author": "Alex Webb <alexwebb2@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aiwebb/omega-fn/issues"
+    "url": "https://github.com/aiwebb/bimodal/issues"
   },
-  "homepage": "https://github.com/aiwebb/omega-fn#readme"
+  "homepage": "https://github.com/aiwebb/bimodal#readme"
 }
